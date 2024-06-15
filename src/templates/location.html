@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-<hash>"
+      crossorigin="anonymous"
+    />
+
+    <title>FarmFresh-Admin</title>
+
+    <link rel="stylesheet" href="../styles/style-loc.css" />
+  </head>
+
+  <body>
+    <!-- Side navigation -->
+    <div class="sidenav">
+      <div class="web-name">
+        <h1>FarmFresh</h1>
+        <p>Store Side</p>
+      </div>
+      <div class="side-menu">
+        <a href="index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <a href="#"><i class="fas fa-store"></i> Store</a>
+        <a href="items.html"><i class="fas fa-list"></i> Item List</a>
+        <a href="history.html"><i class="fas fa-history"></i> Order History</a>
+        <a href="location.html"
+          ><i class="fas fa-map-marker-alt"></i> Location</a
+        >
+        <a href="review.html"><i class="fas fa-star"></i> Review</a>
+        <a href="#"><i class="fas fa-comments"></i> Chat</a>
+      </div>
+    </div>
+
+    <main>
+      <div class="top-dashboard">
+        <!-- Bagian 1: menu -->
+        <div class="item-menu">
+          <ul>
+            <li>
+              <a href="#"><i class="fas fa-comments"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-cog"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Bagian 2: Profile Pic -->
+        <div class="profile-pic">
+          <p>Hello, Esa Faizal Gibran</p>
+          <img src="../publics/img/image.png" alt="Avatar" />
+        </div>
+      </div>
+
+      <div class="search-map-container">
+        <div class="search-form">
+          <form id="storeForm">
+            <label for="storeLocation">Store Location:</label>
+            <input
+              type="text"
+              id="storeLocation"
+              name="storeLocation"
+              required
+            />
+
+            <label for="contactNumber">Contact Number:</label>
+            <input
+              type="text"
+              id="contactNumber"
+              name="contactNumber"
+              required
+            />
+
+            <button type="submit">Save</button>
+          </form>
+        </div>
+        <div class="search-data"></div>
+      </div>
+
+      <div class="map-container">
+        <iframe
+          id="googleMap"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31684.132902468027!2d107.56507321083984!3d-6.948221999999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e6279d52ed8b%3A0xfbc31838ba12ddbf!2sUniversitas%20Teknologi%20Bandung!5e0!3m2!1sen!2sid!4v1718451145339!5m2!1sen!2sid"
+          width="1300"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </main>
+
+    <script src="../scripts/location.js"></script>
+  </body>
+</html>
