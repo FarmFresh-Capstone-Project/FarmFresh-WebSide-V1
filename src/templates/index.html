@@ -13,146 +13,15 @@
     />
 
     <title>FarmFresh-Admin</title>
-
-    <link rel="stylesheet" href="../styles/style.css" />
   </head>
 
   <body>
     <!-- Side navigation -->
-    <div class="sidenav">
-      <div class="web-name">
-        <h1>FarmFresh</h1>
-        <p>Store Side</p>
-      </div>
-      <div class="side-menu">
-        <a href="index.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
-        <a href="#"><i class="fas fa-store"></i> Store</a>
-        <a href="items.html"><i class="fas fa-list"></i> Item List</a>
-        <a href="history.html"><i class="fas fa-history"></i> Order History</a>
-        <a href="location.html"
-          ><i class="fas fa-map-marker-alt"></i> Location</a
-        >
-        <a href="review.html"><i class="fas fa-star"></i> Review</a>
-        <a href="#"><i class="fas fa-comments"></i> Chat</a>
-      </div>
-    </div>
+    <side-nav></side-nav>
 
-    <main>
-      <div class="top-dashboard">
-        <!-- Bagian 1: menu -->
-        <div class="item-menu">
-          <ul>
-            <li>
-              <a href="#"><i class="fas fa-comments"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fas fa-cog"></i></a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Bagian 2: Profile Pic -->
-        <div class="profile-pic">
-          <p>Hello, Esa Faizal Gibran</p>
-          <img src="../publics/img/image.png" alt="Avatar" />
-        </div>
-      </div>
-
-      <div class="second-dashboard">
-        <!-- Bagian 1: welcome text -->
-        <div class="welcome-dashboard">
-          <h1>Dashboard</h1>
-          <p>Hi, Esa. Welcome back to FarmFresh Admin!</p>
-        </div>
-
-        <!-- Bagian 2: tanggal section -->
-        <div class="date-container">
-          <div class="icon-container">
-            <i class="far fa-calendar"></i>
-          </div>
-          <div class="text-container">
-            <h3 id="currentDay"></h3>
-            <p id="currentTime"></p>
-          </div>
-        </div>
-      </div>
-
-      <div class="dashboard-mainContent">
-        <!-- Bagian 1: Total Items -->
-        <div class="item-container">
-          <div class="icons-container">
-            <i class="fas fa-leaf"></i>
-          </div>
-          <div class="texts-container">
-            <h2>0</h2>
-            <h3>Total Items</h3>
-          </div>
-        </div>
-
-        <!-- Bagian 2: Total Order -->
-        <div class="item-container">
-          <div class="icons-container">
-            <i class="fas fa-box"></i>
-          </div>
-          <div class="texts-container">
-            <h2>0</h2>
-            <h3>Total Orders</h3>
-          </div>
-        </div>
-
-        <!-- Bagian 3: Total Revenue -->
-        <div class="item-container">
-          <div class="icons-container">
-            <i class="fas fa-comment-dollar"></i>
-          </div>
-          <div class="texts-container">
-            <h2>0</h2>
-            <h3>Total Revenue</h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="dashboard-review">
-        <!-- Bagian 1: Review Text -->
-        <div class="review-text">
-          <h1>Customer Review</h1>
-          <p>Feedback for better result</p>
-        </div>
-
-        <!-- Bagian 2: Review Card -->
-        <div class="review-container">
-          <!-- profile -->
-          <div class="profile-review-container">
-            <div class="pic-container">
-              <img
-                src="../publics/img/image.png"
-                alt="Avatar"
-                class="profile-review"
-              />
-            </div>
-            <div class="name-container">
-              <h3>Esa Faizal Gibran</h3>
-              <p>2 days ago</p>
-            </div>
-          </div>
-
-          <!-- Deskripsi -->
-          <div class="description-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
-              corporis provident neque omnis quas ipsum deleniti. Incidunt,
-              possimus consequuntur sit ut modi suscipit! Debitis omnis, officia
-              illum ut eligendi libero!
-            </p>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star checked"></span>
-            <span class="fa fa-star"></span>
-            <span class="fa fa-star"></span>
-          </div>
-        </div>
-      </div>
-    </main>
-    <script src="../scripts/index.js"></script>
+    <top-dashboard></top-dashboard>
+    
+    <main id="mainContent"></main>
+    
   </body>
 </html>
